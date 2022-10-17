@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Calculator</title>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <form id="BMI_form" onsubmit="calculateBMI(event)">
+      <input type="radio" id="male" name="gender" value="Male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+      <input
+        autocomplete="off"
+        id="height"
+        placeholder="Enter your height in cm"
+        required
+        type="text"
+      />
+      <input
+        autocomplete="off"
+        id="weight"
+        placeholder="Enter your weight in kg"
+        required
+        type="text"
+      />
+      <button type="submit">Calculate</button>
+    </form>
+    <p id="calculator_results"></p>
+  </body>
+</html>
